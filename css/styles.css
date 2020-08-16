@@ -244,6 +244,7 @@ img {
 }
 
 /* Общие  стили для секций*/
+
 .box {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -295,6 +296,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .social-link:last-child {
   margin-right: 0;
 }
@@ -366,6 +368,7 @@ img {
 .section-team {
   background-color: #f5f4fa;
 }
+
 .team-box {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -373,6 +376,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
 }
+
 .team-title {
   margin-top: 30px;
   margin-bottom: 0;
@@ -393,6 +397,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -427,10 +432,12 @@ img {
   fill: #afb1b8;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .clients-icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon,
 .clients-link:hover,
@@ -506,17 +513,20 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--primary-white-color);
 }
+
 /* Портфолио*/
 
 .portfolio-conteiner {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .btn-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .button.secondary {
   display: inline-block;
   min-width: 73px;
@@ -651,10 +661,12 @@ img {
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
+
 .modal {
   position: absolute;
   top: 50%;
