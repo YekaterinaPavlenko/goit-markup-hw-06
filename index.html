@@ -560,9 +560,21 @@
         </div>
         <div class="f-box-two">
           <b class="bold">Подпишитесь на рассылку</b>
+          <form action="" class="footer-form">
+            <input
+              type="email"
+              name="email"
+              class="footer-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button primary footer-button">
+              Подписаться
+            </button>
+          </form>
         </div>
       </div>
     </footer>
+    <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="" class="btn-close" data-modal-close>
@@ -570,45 +582,57 @@
             <use href="./images/sprite-icon.svg#close-black"></use>
           </svg>
         </button>
-        <h2 class="message">Оставьте свои данные, мы вам перезвоним</h2>
-        <div class="form-box">
-          <form action="">
-            <p class="form-text">Имя</p>
-            <label for="">
-              <svg class="form-icon" width="18" height="18">
-                <use href="./images/sprite-icon.svg#person-black"></use>
-              </svg>
-              <input type="text" class="input-box" name="" />
-            </label>
-            <p class="form-text">Телефон</p>
-            <label for="">
-              <input type="tel" class="input-box" name="" />
-            </label>
-            <p class="form-text">Почта</p>
-            <label for="">
-              <input type="email" class="input-box" name="" />
-            </label>
-            <p class="form-text">Комментарий</p>
-            <label for="">
-              <input
-                type="text"
-                class="input-box comment"
-                name=""
-                placeholder="Введите текст"
-              />
-            </label>
-            <label for="" class="check-box">
-              <input type="text" class="checkbox" name="" />
-              <p class="form-text-accept">
-                Соглашаюсь с рассылкой и принимаю
-                <a href="" class="contract">Условия договора</a>
-              </p>
-            </label>
-            <button type="submit" class="button primary btn-send">
-              Отправить
-            </button>
-          </form>
-        </div>
+        <b class="message">Оставьте свои данные, мы вам перезвоним</b>
+        <form action="" class="form-box">
+          <label class="form-field">
+            <span class="form-label">Имя</span>
+            <input type="text" class="input-box" name="name" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/sprite-icon.svg#person-black"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            <span class="form-label">Телефон</span>
+            <input type="tel" class="input-box" name="tel" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/sprite-icon.svg#phone-black"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            <span class="form-label">Почта</span>
+            <input type="email" class="input-box" name="email" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/sprite-icon.svg#email-black"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            <span class="form-label">Комментарий</span>
+            <textarea
+              class="input-box comment"
+              name="comment"
+              rows="5"
+              cols="45"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="check-box">
+            <input
+              type="checkbox"
+              class="checkbox visually-hidden"
+              name="checkbox"
+            />
+            <svg class="check-icon" width="16" height="15">
+              <use href="./images/sprite-icon.svg#icon-check"></use>
+            </svg>
+            <p class="form-text-accept">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="contract">Условия договора</a>
+            </p>
+          </label>
+          <button type="submit" class="button primary btn-send">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
     <script src="./modal.js"></script>
